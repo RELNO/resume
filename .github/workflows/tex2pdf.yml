@@ -12,14 +12,6 @@ jobs:
         with:
           root_file: resume.tex
 
-      # - name: Save to repo
-      #   uses: actions/upload-artifact@v3
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     name: resume.pdf
-      #     path: ./resume.pdf
-
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
