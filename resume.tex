@@ -1,4 +1,4 @@
-\documentclass[10pt,letterpaper]{report}
+\documentclass[8pt,letterpaper]{report}
 \usepackage[T1]{fontenc} % output T1 font encoding (8-bit) for accented characters as single glyph
 \usepackage[strict,autostyle]{csquotes} % smart and nestable quote marks
 \usepackage[USenglish]{babel} % regionalize hyphens, quote marks, etc automatically
@@ -10,6 +10,7 @@
 \usepackage{enumitem} % enumerate with [resume] option
 \usepackage{titlesec} % allow custom section fonts
 \usepackage{setspace} % custom line spacing
+
 
 % what is your name?
 \newcommand{\myname}{Ariel Noyman}
@@ -79,45 +80,35 @@
 }
 
 % change fonts 
-% \usepackage[sfdefault,light]{roboto}
+\usepackage[sfdefault,light]{roboto}
 
 \begin{document}
 
 % display today's date as Month Year after a vertical space below the end of the text
 \begin{center}
     \vfill
-    \small {Updated \monthyeardate\today}
+    \tiny {Updated \monthyeardate\today}
 \end{center}
-\vspace{2em}
+\vspace{3em}
 
 \raggedright
 \namefont{\myname}
 \newline
 
-\vspace{3em}
-
-\begin{minipage}{0.4\linewidth}
-    \textbf{Office} MIT Media Lab, City Science Group,
-    75 Amherst St, Cambridge, MA 02139
-\end{minipage}
-\hfill
-\begin{minipage}{0.5\linewidth}
-    \textbf{Email} \href{mailto:noyman@mit.edu}{noyman@mit.edu}
-    \newline
-    \textbf{Website} \href{http://www.arielnoyman.com/}{arielnoyman.com}
-    \newline
-    \textbf{Media Lab} \href{https://www.media.mit.edu/people/noyman/overview/}{media.mit.edu/people/noyman}
-
-\end{minipage}
+\textbf{Email} \href{mailto:noyman@mit.edu}{noyman@mit.edu}
+\newline
+\textbf{Web} \href{http://www.arielnoyman.com/}{arielnoyman.com} | \href{https://www.media.mit.edu/people/noyman/overview/}{media.mit.edu/people/noyman}
+\newline
+\textbf{Office} MIT Media Lab, City Science Group, 75 Amherst St, Cambridge, MA 02139 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{chapters/research_area}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{chapters/education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{chapters/jobs}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{chapters/teaching}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{chapters/education}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{chapters/projects}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
