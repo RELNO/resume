@@ -25,11 +25,11 @@
 % set section heading fonts and before/after spacing
 \SetTracking{encoding=*, family=\ssfamily}{30} % increase tracking for sans serif headings
 \titleformat{\section}{\bfseries\large\uppercase}{}{}{}{}
-\titlespacing{\section}{0pt}{35pt plus 4pt minus 4pt}{15pt plus 2pt minus 2pt}
+\titlespacing{\section}{0pt}{20pt plus 4pt minus 4pt}{5pt plus 2pt minus 2pt}
 
 % set subsection heading fonts and before/after spacing
 \titleformat{\subsection}{\lsstyle\bfseries}{}{}{}{}
-\titlespacing{\subsection}{0pt}{30pt plus 4pt minus 4pt}{10pt plus 2pt minus 2pt}
+\titlespacing{\subsection}{0pt}{15pt plus 4pt minus 4pt}{5pt plus 2pt minus 2pt}
 
 % set page margins (assumes letter paper)
 \geometry{body={6.5in, 9.0in},
@@ -40,8 +40,7 @@
 \setlength\parindent{0em}
 
 % set line spacing
-\setstretch{0.95}
-
+\setstretch{0.9}
 % define space between list items
 \newcommand{\listitemspace}{0.25em}
 
@@ -80,7 +79,8 @@
 }
 
 % change fonts 
-\usepackage[sfdefault,light]{roboto}
+% \usepackage[sfdefault,light]{roboto}
+\usepackage[sfdefault, light, scaled=0.8]{roboto}
 
 \begin{document}
 
@@ -89,7 +89,7 @@
     \vfill
     \tiny {Updated \monthyeardate\today}
 \end{center}
-\vspace{3em}
+\vspace{2em}
 
 \raggedright
 \namefont{\myname}
