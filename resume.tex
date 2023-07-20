@@ -1,5 +1,8 @@
-\documentclass[8pt,letterpaper]{report}
-\usepackage[T1]{fontenc} % output T1 font encoding (8-bit) for accented characters as single glyph
+\documentclass[10pt]{book}
+\usepackage{lipsum,mathptmx,etoolbox} 
+% \usepackage[T1]{fontenc} % output T1 font encoding (8-bit) for accented characters as single glyph
+
+
 \usepackage[strict,autostyle]{csquotes} % smart and nestable quote marks
 \usepackage[USenglish]{babel} % regionalize hyphens, quote marks, etc automatically
 \usepackage{microtype}% improve text appearance with kerning, etc
@@ -11,6 +14,9 @@
 \usepackage{titlesec} % allow custom section fonts
 \usepackage{setspace} % custom line spacing
 
+% letter spaceing 
+\usepackage{soul}
+
 
 % what is your name?
 \newcommand{\myname}{Ariel Noyman}
@@ -18,18 +24,15 @@
 % how far to tab for list items with left-aligned date: different fonts need different widths
 \newcommand{\listtabwidth}{2cm}
 
-% define font to use as document's title
-\newcommand{\namefont}[1]{{\lsstyle\Huge\bfseries{#1}}}
-
-
 % set section heading fonts and before/after spacing
-\SetTracking{encoding=*, family=\ssfamily}{20} % increase tracking for sans serif headings
+% \SetTracking{encoding=*, family=\ssfamily}{20} % increase tracking for sans serif headings
 \titleformat{\section}{\bfseries\large\uppercase}{}{}{}{}
 \titlespacing{\section}{0pt}{20pt plus 4pt minus 4pt}{5pt plus 2pt minus 2pt}
 
 % set subsection heading fonts and before/after spacing
-\titleformat{\subsection}{\lsstyle\bfseries}{}{}{}{}
-\titlespacing{\subsection}{0pt}{15pt plus 4pt minus 4pt}{5pt plus 2pt minus 2pt}
+\titleformat{\subsection}{\bfseries}{}{}{}{}
+
+\titlespacing{\subsection}{5pt}{15pt plus 10pt minus 4pt}{15pt plus 2pt minus 2pt}
 
 % set page margins (assumes letter paper)
 \geometry{body={6.5in, 9.0in},
@@ -40,7 +43,7 @@
 \setlength\parindent{0em}
 
 % set line spacing
-\setstretch{0.9}
+\setstretch{1.1}
 % define space between list items
 \newcommand{\listitemspace}{0.25em}
 
@@ -80,20 +83,23 @@
 
 % change fonts 
 % \usepackage[sfdefault,light]{roboto}
-\usepackage[sfdefault, light, scaled=0.8]{roboto}
+% \usepackage[T1]{fontenc}
+% \usepackage[sfdefault, light, scaled=0.8]{roboto}
 
 \begin{document}
-
+\pagestyle{empty}
 % display today's date as Month Year after a vertical space below the end of the text
 \begin{center}
     \vfill
-    \tiny {Updated \monthyeardate\today}
+    \tiny {[Updated \monthyeardate\today]}
 \end{center}
 \vspace{2em}
 
-\raggedright
-\namefont{\myname}
-\newline
+
+\begin{flushleft}
+    {\Huge\bfseries {\myname}}
+\end{flushleft}
+
 
 \textbf{Email} \href{mailto:noyman@mit.edu}{noyman@mit.edu}
 \newline
