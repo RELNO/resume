@@ -1,7 +1,18 @@
 \documentclass[10pt]{book}
-\usepackage{lipsum,mathptmx,etoolbox} 
-% \usepackage[T1]{fontenc} % output T1 font encoding (8-bit) for accented characters as single glyph
 
+%%%%%%%%
+% change fonts 
+% \usepackage[sfdefault,light, scaled=0.9]{roboto}
+% \usepackage[T1]{fontenc}
+
+\usepackage[scaled=0.9]{helvet}
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
+
+
+%%%%%%%%
+
+\usepackage{lipsum,mathptmx,etoolbox} 
 
 \usepackage[strict,autostyle]{csquotes} % smart and nestable quote marks
 \usepackage[USenglish]{babel} % regionalize hyphens, quote marks, etc automatically
@@ -81,10 +92,6 @@
     pdfpagemode = UseNone
 }
 
-% change fonts 
-% \usepackage[sfdefault,light]{roboto}
-% \usepackage[T1]{fontenc}
-% \usepackage[sfdefault, light, scaled=0.8]{roboto}
 
 \begin{document}
 \pagestyle{empty}
