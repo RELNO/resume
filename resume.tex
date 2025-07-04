@@ -83,8 +83,9 @@
 % define hyperlink appearance and metadata for pdf properties
 \usepackage{xcolor}         
 \hypersetup{
-    colorlinks={true},
-    allcolors={blue!40!black},
+    colorlinks=false,
+    pdfborderstyle={/S/U/W 0.25}, % style of link border, here a thin underline
+    allbordercolors={0 0 0}, % color of the border, here black
     pdfauthor   = {\myname},
     pdfkeywords = {city science, architecture, planning, computer science, urban design, urban informatics},
     pdftitle    = {\myname: resume},
@@ -98,7 +99,7 @@
 % display today's date as Month Year after a vertical space below the end of the text
 \begin{center}
     \vfill
-    \tiny {[Updated \monthyeardate\today]}
+    % \small {[Updated \monthyeardate\today]}
 \end{center}
 \vspace{2em}
 
@@ -112,7 +113,7 @@
 \newline
 \textbf{Web} \href{http://www.arielnoyman.com/}{arielnoyman.com} | \href{https://www.media.mit.edu/people/noyman/overview/}{media.mit.edu/people/noyman}
 \newline
-\textbf{Office} MIT Media Lab, City Science Group, 75 Amherst St, Cambridge, MA 02139 
+\textbf{Office} MIT Media Lab, City Science Group, 75 Amherst St, Cambridge, MA 02139
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{chapters/research_area}
