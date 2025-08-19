@@ -78,7 +78,7 @@
     font=\normalfont}
 
 % print only the month and year when using \today
-\newdateformat{monthyeardate}{\monthname[\THEMONTH]\THEYEAR}
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
 
 % define hyperlink appearance and metadata for pdf properties
 \usepackage{xcolor}         
@@ -99,7 +99,7 @@
 % display today's date as Month Year after a vertical space below the end of the text
 \begin{center}
     \vfill
-    \small {[Updated \monthyeardate\today]}
+    {[Updated \monthyeardate\today ]}
 \end{center}
 \vspace{2em}
 
