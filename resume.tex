@@ -2,10 +2,10 @@
 
 %%%%%%%%
 % change fonts 
-% \usepackage[sfdefault,light, scaled=0.9]{roboto}
+% \usepackage[sfdefault,light, scaled=1]{roboto}
 % \usepackage[T1]{fontenc}
 
-\usepackage[scaled=0.8]{helvet}
+\usepackage[scaled=0.9]{helvet}
 \renewcommand\familydefault{\sfdefault} 
 \usepackage[T1]{fontenc}
 
@@ -25,7 +25,7 @@
 \usepackage{titlesec} % allow custom section fonts
 \usepackage{setspace} % custom line spacing
 
-% letter spaceing 
+% letter spacing 
 \usepackage{soul}
 
 
@@ -78,7 +78,7 @@
     font=\normalfont}
 
 % print only the month and year when using \today
-\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
+\newdateformat{monthyeardate}{\monthname[\THEMONTH]\THEYEAR}
 
 % define hyperlink appearance and metadata for pdf properties
 \usepackage{xcolor}         
@@ -99,7 +99,7 @@
 % display today's date as Month Year after a vertical space below the end of the text
 \begin{center}
     \vfill
-    % \small {[Updated \monthyeardate\today]}
+    \small {[Updated \monthyeardate\today]}
 \end{center}
 \vspace{2em}
 
@@ -108,27 +108,32 @@
     {\Huge\bfseries {\myname}}
 \end{flushleft}
 
-
-\textbf{Email} \href{mailto:noyman@mit.edu}{noyman@mit.edu}
-\newline
-\textbf{Web} \href{http://www.arielnoyman.com/}{arielnoyman.com} | \href{https://www.media.mit.edu/people/noyman/overview/}{media.mit.edu/people/noyman}
-\newline
-\textbf{Office} MIT Media Lab, City Science Group, 75 Amherst St, Cambridge, MA 02139
+\begin{minipage}[t]{0.52\textwidth}
+    \vspace{0pt}
+    City Science Group\\
+    Media Lab, School of Architecture and Planning (SA+P)\\
+    Massachusetts Institute of Technology (MIT)
+\end{minipage}%
+\begin{minipage}[t]{0.48\textwidth}
+    \vspace{0pt}
+    \raggedleft
+    noyman@mit.edu\\
+    arielnoyman.com | media.mit.edu/people/noyman\\
+    75 Amherst St, Cambridge, MA 02139
+\end{minipage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{chapters/research_area}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{chapters/education}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{chapters/jobs}
+\input{chapters/APPOINTMENTS}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{chapters/teaching}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{chapters/projects}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{chapters/publications}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{chapters/exhabitions}
+\input{chapters/projects}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{chapters/talks}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -136,10 +141,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{chapters/service}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{chapters/exhabitions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{chapters/PROFESSIONAL_EMPLOYMENT}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{chapters/credentials_tools}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{chapters/media}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \end{document}
 
 
